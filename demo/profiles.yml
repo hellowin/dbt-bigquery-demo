@@ -1,0 +1,9 @@
+demo:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: hellowin-dbt-demo
+      dataset: demo
+      threads: 1
