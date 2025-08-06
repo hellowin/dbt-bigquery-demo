@@ -1,0 +1,25 @@
+
+version: 2
+
+models:
+  - name: solana_transactions
+    description: "A model to track Solana transactions"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+      - name: block_timestamp
+      - name: block_slot
+      - name: block_hash
+      - name: fee
+      - name: accounts
+      - name: balance_changes
+
+  - name: solana_whale
+    description: "A model to identify Solana whale transactions"
+    columns:
+      - name: account
+      - name: total_changes
+      - name: hour
