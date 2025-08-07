@@ -4,6 +4,6 @@ demo:
     dev:
       type: bigquery
       method: oauth
-      project: hellowin-dbt-demo
+      project: gercep-441314
       dataset: demo
       threads: 1
