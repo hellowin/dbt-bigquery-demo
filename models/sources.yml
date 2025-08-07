@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: solana
+    database: bigquery-public-data
+    schema: crypto_solana_mainnet_us
+    tables:
+      - name: Transactions

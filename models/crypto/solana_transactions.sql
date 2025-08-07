@@ -19,7 +19,7 @@ WITH solana_transactions AS (
     accounts,
     balance_changes
   FROM
-    `bigquery-public-data.crypto_solana_mainnet_us.Transactions`
+    {{ source('solana', 'Transactions') }}
   WHERE TIMESTAMP_TRUNC(block_timestamp, MONTH) = TIMESTAMP("2025-08-01")
 )
 
